@@ -1,0 +1,14 @@
+apply plugin: "com.android.library"
+apply plugin: "org.jetbrains.kotlin.android"
+apply plugin: "com.facebook.react"
+react {
+    jsRootDir = file("../src")
+    libraryName = "SkyvistAdaptiveColorSpec"
+    codegenJavaPackageName = "com.skyvist.adaptivecolor"
+}
+android {
+    namespace "com.skyvist.adaptivecolor"
+    compileSdk rootProject.ext.compileSdkVersion
+    defaultConfig { minSdk rootProject.ext.minSdkVersion }
+}
+dependencies { implementation("com.facebook.react:react-android") }

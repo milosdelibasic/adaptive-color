@@ -1,0 +1,81 @@
+{
+  "name": "@skyvist/adaptive-color",
+  "version": "0.2.0",
+  "description": "Adaptive foreground colors for React Native text and controls over images, videos, maps and native views",
+  "license": "MIT",
+  "author": "Skyvist",
+  "main": "src/index.ts",
+  "react-native": "src/index.ts",
+  "types": "src/index.ts",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": ">=0.86.0"
+  },
+  "codegenConfig": {
+    "name": "SkyvistAdaptiveColorSpec",
+    "type": "modules",
+    "jsSrcsDir": "src/specs",
+    "android": {
+      "javaPackageName": "com.skyvist.adaptivecolor"
+    },
+    "ios": {
+      "modulesProvider": {
+        "SkyvistAdaptiveColor": "SkyvistAdaptiveColor"
+      }
+    }
+  },
+  "homepage": "https://github.com/milosdelibasic/adaptive-color#readme",
+  "files": [
+    "src",
+    "ios",
+    "android/build.gradle",
+    "android/src/main",
+    "SkyvistAdaptiveColor.podspec",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md",
+    "VALIDATION.md"
+  ],
+  "keywords": [
+    "react-native",
+    "adaptive-color",
+    "contrast",
+    "image",
+    "video",
+    "map",
+    "ios",
+    "android",
+    "turbomodule"
+  ],
+  "engines": {
+    "node": ">=22.11.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "jest --runInBand --watchman=false"
+  },
+  "devDependencies": {
+    "@babel/core": "7.29.13",
+    "@react-native/babel-preset": "0.88.1",
+    "@react-native/jest-preset": "0.88.1",
+    "@react-native/typescript-config": "0.88.1",
+    "@types/jest": "29.5.14",
+    "@types/react": "19.3.0",
+    "babel-jest": "29.7.0",
+    "jest": "29.7.0",
+    "react": "19.3.1",
+    "react-native": "0.88.1",
+    "typescript": "5.9.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milosdelibasic/adaptive-color.git"
+  },
+  "bugs": {
+    "url": "https://github.com/milosdelibasic/adaptive-color/issues"
+  }
+}

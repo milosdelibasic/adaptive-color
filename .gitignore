@@ -1,0 +1,11 @@
+node_modules/
+build/
+.gradle/
+.cxx/
+.kotlin/
+*.tgz
+coverage/
+
+.npmrc
+.env*
+*.p8
