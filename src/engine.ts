@@ -97,6 +97,7 @@ export class AdaptiveColorEngine {
           if (!this.active) {
             if (this.timer) clearTimeout(this.timer);
             this.timer = null;
+            this.sources.forEach((_, id) => Native?.releaseSource?.(id));
           } else this.sources.forEach((_, id) => this.invalidate(id));
         },
       );

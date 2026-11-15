@@ -73,6 +73,7 @@ it("pauses in the background and removes the lifecycle subscription after unmoun
   engine.register(target("search"));
   const listener = jest.mocked(AppState.addEventListener).mock.calls[0][1];
   listener("background");
+  expect(Native!.releaseSource).toHaveBeenCalledWith("map");
   await jest.advanceTimersByTimeAsync(2000);
   expect(Native!.capture).not.toHaveBeenCalled();
   listener("active");

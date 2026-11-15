@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.1
+
+- Release native video frames and source caches when the application enters the background; recreate them on return.
+
 ## 0.2.0
 
 General background support: ordinary native views/images, iOS AVPlayerLayer video

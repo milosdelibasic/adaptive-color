@@ -1,6 +1,6 @@
 {
   "name": "@skyvist/adaptive-color",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Adaptive foreground colors for React Native text and controls over images, videos, maps and native views",
   "license": "MIT",
   "author": "Skyvist",
